@@ -7,7 +7,6 @@ it("Username in Login", () => {
   cy.get('input[name="user"]');
 });
 
-// cy.get("div.App").children().should("have.class", "login__container"
 it("typing for user", () => {
   mount(<Login />);
   cy.get('input[name="user"]').type("ray");
@@ -18,8 +17,10 @@ it("Password in Login", () => {
   cy.get('input[name="password"]');
 });
 
-// cy.get("div.App").children().should("have.class", "login__container"
 it("typing for Password", () => {
   mount(<Login />);
   cy.get('input[name="password"]').type("010haeun");
 });
+
+it("success login", () => {});
+it("wrong username or password", () => {});

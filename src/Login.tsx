@@ -45,11 +45,11 @@ class Login extends Component<Props, State> {
     const currentAccount = users.find(
       (usr) => usr.username === this.state.user
     );
-    console.log(currentAccount);
-    if (currentAccount?.password === +this.state.password) {
-      this.props.history.push(`/welcome?username=${currentAccount.username}`);
-      //else prompt the user or password is wrong
+
+    if (currentAccount?.password !== +this.state.password) {
+      return alert("Username/ Password incorrect!");
     }
+    this.props.history.push(`/welcome?username=${currentAccount.username}`);
   }
 
   render() {
