@@ -1,3 +1,9 @@
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .login__container {
   background-color: rgb(238, 238, 238);
   border-radius: 10px;
@@ -15,7 +21,12 @@
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 50%;
 }
 h3 {
   margin-top: 20px;
+}
+
+.submit-btn {
+  padding: 4px 32px;
 }
